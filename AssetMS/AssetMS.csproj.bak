@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FAB899A-85D8-4251-87D6-5D2516A36FC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetMS</RootNamespace>
+    <AssemblyName>AssetMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v15.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.2.Win, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v15.2.Drawing, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v15.2.Extensions, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Presets, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.2.Extensions, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Compressed\MySqlBackup.NET_2.0.9.2\binaries\v4.5\MySql.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=2.0.9.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\Compressed\MySqlBackup.NET_2.0.9.2\binaries\v4.5\MySqlBackup.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allAssigned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allAssigned.Designer.cs">
+      <DependentUpon>allAssigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allCategories.Designer.cs">
+      <DependentUpon>allCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allItemsCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allItemsCondition.Designer.cs">
+      <DependentUpon>allItemsCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allLoanedItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allLoanedItems.Designer.cs">
+      <DependentUpon>allLoanedItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allRepairRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allRepairRecords.Designer.cs">
+      <DependentUpon>allRepairRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allStoreItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allStoreItems.Designer.cs">
+      <DependentUpon>allStoreItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allunassigned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allunassigned.Designer.cs">
+      <DependentUpon>allunassigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_Departments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_Departments.Designer.cs">
+      <DependentUpon>all_Departments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_inventories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_inventories.Designer.cs">
+      <DependentUpon>all_inventories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_Offices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_Offices.Designer.cs">
+      <DependentUpon>all_Offices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_Untraceable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_Untraceable.Designer.cs">
+      <DependentUpon>all_Untraceable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_users.Designer.cs">
+      <DependentUpon>all_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="EnCryptDecrypt.cs" />
+    <Compile Include="HardwareInfo.cs" />
+    <Compile Include="InternetAvailability.cs" />
+    <Compile Include="formatText.cs" />
+    <Compile Include="newAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newAdmin.Designer.cs">
+      <DependentUpon>newAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItemLost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItemLost.Designer.cs">
+      <DependentUpon>newItemLost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemInfo.Designer.cs">
+      <DependentUpon>systemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestEmail.cs" />
+    <Compile Include="TestPassword.cs" />
+    <Compile Include="all_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_Items.Designer.cs">
+      <DependentUpon>all_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allQueries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allQueries.Designer.cs">
+      <DependentUpon>allQueries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transactionlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transactionlog.Designer.cs">
+      <DependentUpon>transactionlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wait_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wait_form.Designer.cs">
+      <DependentUpon>wait_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pdfviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pdfviewer.Designer.cs">
+      <DependentUpon>pdfviewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newUserLogin.Designer.cs">
+      <DependentUpon>newUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItem.Designer.cs">
+      <DependentUpon>newItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newDepartment.Designer.cs">
+      <DependentUpon>newDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newinventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newinventory.Designer.cs">
+      <DependentUpon>newinventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newCategory.Designer.cs">
+      <DependentUpon>newCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newOffice.Designer.cs">
+      <DependentUpon>newOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newQuery.Designer.cs">
+      <DependentUpon>newQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItemStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItemStore.Designer.cs">
+      <DependentUpon>newItemStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItemRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItemRepair.Designer.cs">
+      <DependentUpon>newItemRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newAssignItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newAssignItem.Designer.cs">
+      <DependentUpon>newAssignItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItemClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItemClearance.Designer.cs">
+      <DependentUpon>newItemClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newsystemUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newsystemUser.Designer.cs">
+      <DependentUpon>newsystemUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newItemloan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newItemloan.Designer.cs">
+      <DependentUpon>newItemloan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inventoryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="inventoryReport.Designer.cs">
+      <DependentUpon>inventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipStorer.cs" />
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allAssigned.resx">
+      <DependentUpon>allAssigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allCategories.resx">
+      <DependentUpon>allCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allItemsCondition.resx">
+      <DependentUpon>allItemsCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allLoanedItems.resx">
+      <DependentUpon>allLoanedItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allRepairRecords.resx">
+      <DependentUpon>allRepairRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allStoreItems.resx">
+      <DependentUpon>allStoreItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allunassigned.resx">
+      <DependentUpon>allunassigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_Departments.resx">
+      <DependentUpon>all_Departments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_inventories.resx">
+      <DependentUpon>all_inventories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_Offices.resx">
+      <DependentUpon>all_Offices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_Untraceable.resx">
+      <DependentUpon>all_Untraceable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_users.resx">
+      <DependentUpon>all_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newAdmin.resx">
+      <DependentUpon>newAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItemLost.resx">
+      <DependentUpon>newItemLost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemInfo.resx">
+      <DependentUpon>systemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_Items.resx">
+      <DependentUpon>all_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allQueries.resx">
+      <DependentUpon>allQueries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transactionlog.resx">
+      <DependentUpon>transactionlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wait_form.resx">
+      <DependentUpon>wait_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pdfviewer.resx">
+      <DependentUpon>pdfviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newUserLogin.resx">
+      <DependentUpon>newUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItem.resx">
+      <DependentUpon>newItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newDepartment.resx">
+      <DependentUpon>newDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newinventory.resx">
+      <DependentUpon>newinventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCategory.resx">
+      <DependentUpon>newCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newOffice.resx">
+      <DependentUpon>newOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newQuery.resx">
+      <DependentUpon>newQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItemStore.resx">
+      <DependentUpon>newItemStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItemRepair.resx">
+      <DependentUpon>newItemRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newAssignItem.resx">
+      <DependentUpon>newAssignItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItemClearance.resx">
+      <DependentUpon>newItemClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newsystemUser.resx">
+      <DependentUpon>newsystemUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newItemloan.resx">
+      <DependentUpon>newItemloan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventoryReport.resx">
+      <DependentUpon>inventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imgg.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
